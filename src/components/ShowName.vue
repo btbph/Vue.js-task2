@@ -1,5 +1,5 @@
 <template>
-    <div>Hello, {{ name }}</div>
+    <div class="name">Hello, {{ name }}</div>
 </template>
 
 <script>
@@ -9,3 +9,17 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+    @import "@/variables.scss";
+    .name {
+        display: table-row;
+        line-height: 2;
+        border-radius: 4px;
+
+        &:hover {
+            background-color:$backGRoundHoverItem;
+            cursor: default;
+        }
+    }
+</style>
